@@ -1,0 +1,32 @@
+# A single optional comment line of up to 74 characters
+COMMENT WOMBAT swollenness
+# The type of analysis to be performed. In this case a UNIvariate analysis
+ANALYSIS UNI
+# Name the pedigree file, assuming it is in the same folder as the parameter file
+PEDS swol.ped
+# Name the data file, assuming it is in the same folder as the parameter file
+DATA swol_mother.dat
+# Description of the data file
+# Each variable to be fitted in the model needs to be followed by
+# the maximum number of levels
+ANIMAL 900
+MOTHER 400
+SWOL
+END DATA
+# Model specification
+# Type of effect (FIXed, COVariate, RANdom) and variable name
+# NRM indicates that a pedigree is available for ANIMAL
+MODEL
+RAN ANIMAL NRM
+RAN MOTHER
+# The trait to be analysed
+TRAIT SWOL
+END
+# Specify starting values and the number of rows and columns in the matrix
+# These are not very important here
+VAR residual 1
+200
+VAR ANIMAL 1
+30 
+VAR MOTHER 1
+30

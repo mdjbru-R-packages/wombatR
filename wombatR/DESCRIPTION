@@ -1,0 +1,21 @@
+Package: wombatR
+Encoding: latin1
+Title: Wrapper for Wombat (REML software for heritability estimates)
+Description: R wrapper to use Wombat from R. Wombat is a program that can be
+    used to calculate heritability using a restricted maximum likelihood
+    approach. Its homepage is didgeridoo.une.edu.au/km/wombat.php The approach
+    used in this package relies on the tutorial for Wombat from Wilson,
+    Alastair J., Denis Reale, Michelle N. Clements, Michael M. Morrissey, Erik
+    Postma, Craig A. Walling, Loeske E. B. Kruuk, and Daniel H. Nussey. "An
+    Ecologist’s Guide to the Animal Model." Journal of Animal Ecology 79, no. 1
+    (January 2010): 13–26. doi:10.1111/j.1365-2656.2009.01639.x.
+Version: 1.0.2
+Author: Matthieu Bruneaux <mdjbru@utu.fi>
+Maintainer: Matthieu Bruneaux <mdjbru@utu.fi>
+Depends:
+    R (>= 3.0.2)
+Imports:
+    gdata,
+    dplR
+License: MIT
+LazyData: true
